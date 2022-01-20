@@ -1,6 +1,6 @@
 # Complejidad-algoritmica-js 📚
 
-- Te dejo dos ideas. Puedes crear tu propia colección de algoritmos en tu repositorio, o puedes hacer un Pull Request a este repositorio con nuevos algoritmos
+- Puedes crear tu propia colección de algoritmos en tu repositorio, o puedes hacer un Pull Request a este repositorio con nuevos algoritmos
 
 # Algoritmo	Complejidad Espacial	Complejidad Temporal
 
