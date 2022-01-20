@@ -1,0 +1,154 @@
+ALGORITIMO
+-Secuencia de instrucciones a un problema, con un input, no siempre incluye un output.
+
+2. Como se manejan los algoritmos?
+
+    -Entrada - Proceso - Salida(opcional)
+
+
+
+3. ¿Como elegir un buen algoritmo?
+
+    -Mismo problema, muchos algoritmos.
+
+    Recursos:
+
+    -Tiempo: cuanto tarda el algoritmo en ejecutarse(1 min, 10 min, etc). Tiempo que tarda en ejecutarse, toma recursos y eso se refiere al Tiempo
+
+    -Espacio: el espacio que ocupa el algoritmo, en megas, chrome gasta mucha memoria Ram.
+
+    El tiempo y espacio deben analizarse en la elaboracion de algoritmos.
+
+    Se pueden sacrificar uno de los dos.
+
+    El espacio es de suma importancia en dispositivos embebidos, el manejo de la memoria es critico.
+
+    El tiempo es un factor mas importante en JS.
+
+
+
+
+4. Compelidad algoritmica
+
+    - Medir los recursos, para saber cuantos recursos utiliza un algoritmo.
+
+    -Cuanto tiempo y cuanto espacio toma?
+
+
+
+5. Teoria de la complejidad
+
+    -Estudia el consumo de recursos que un algoritmo ocupa
+
+    -El crecimiento de recursos importa, el ritmo en el que se consumen los recursos.
+
+    -
+
+
+6. Complejidad temporal
+
+    -Es la relación de crecimiento entre datos de entrada y tiempo de ejecución
+    -Recursos mas importante: tiempo.
+    -Todo sea rapido.
+    -Como aumenta o no aumenta gradualmente el tiempo, no es sobre cuantos segundos mas tarda.
+
+
+
+7. Complejidad temporal en practica
+
+    - Performance.now(): funcion que nos ayuda a medir el tiempo entre dos lineas de codigo en ms.
+
+    -Console.time(): funcion no tan precisa como Performance.now()
+
+
+
+
+8. Complejidad espacial
+
+La complejidad espacial, se encarga de calcular cuanto espacio en memoria puede ocupar un algoritmo
+El espacio auxiliar, el cual es el espacio creado por el mismo algoritmo para hacer otro procesos, por ejemplo: filtrar un array, hacer un sort de números, etc.
+
+
+Memoria 
+   -Grandes cantidades que almacenar de info
+   
+Complejidad espacial
+    -Datos de entrada, todos los algoritmos toman siempre datos de entrada.
+    -Espacio auxiliar, sumamente importante.
+    -Ej, algoritmos de ordenamiento, espacio de entrada y Salida
+    -Espacio de entrada = espacio auxiliar, pasos para que se orden los datos.
+
+
+
+
+9. El estado de la complejidad
+
+Otras complejidades existentes
+-Accesos a memoria
+-Medir los procesos paralelos, cuantos se ejecutan al mismo tiempo
+-Comparaciones, si cietos datos se parecen entre si.
+
+-No hay limite sobre complejidad.
+
+
+Simplificar la complejidad:
+-Estandar: Big-0
+
+
+
+
+10. Analisis asintotico
+El Análisis Asintótico es la forma con la que encontramos una función matemática similar a la medición de la complejidad.
+
+-
+
+
+11. Notacion Big o
+
+Para reducir la complejidad.
+¿Que buscamos?
+Descubrir una funcion constante, lineal, polinomial, logaritimica, exponencial que se mayor o igual que la de un algoritmo.
+
+
+
+
+Clase	   Crecimiento	  Formula	Emoji
+
+O(1)	    Constante	  $f(x) = 1 $	            😊
+O(log(n))	Logarítmico	  $f(x) = \log_{10}(x) $	🙂
+O(n)	    Lineal	      $f(x) = x $	            😶
+O($n^2$)	Cuadrático	  $f(x) = x^2 $	            🙁
+O($2^n$)	Exponencial	  $f(x) = 2^x $	             😢
+O(n!)	    Factorial	  $f(x) = x! $
+
+
+Nivel de mejor rendimiento a otros (tiempo, espacio)
+-Constante
+-Lineal
+-Exponencial
+-Cuadratico
+
+
+
+
+12. Calculo de notacion Big-o
+
+-Las varibales representanun Big-O de 1
+-Las condicionales representanun Big-O de 1
+-Ciclo For se multiplica
+-While tenga un crecimiento un poco menor, aplcia la misma regla, vamos hacia un lado Performance
+-Doble ciclo for, cuatro por cada uno
+
+¿Cuantas variales se van creando mientras ejecutamos?
+
+let bar = 'test'	// O(1)
+if() {}		// O(1)
+for() {}		// O(n)
+while() {}	// O(n)
+for() { for() {} }// O(n^2)
+
+
+La notacion Big-0 solo se enfoca en el crecimiento
+
+La complejidad de un algoritmo nace de cuantos recursos utiliza el algoritno al ejecutarse.
+
